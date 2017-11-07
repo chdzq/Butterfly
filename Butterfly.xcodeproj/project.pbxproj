@@ -53,7 +53,7 @@
 		81B619681FB18D7000A62748 = {
 			isa = PBXGroup;
 			children = (
-				81B619741FB18D7100A62748 /* Butterfly */,
+				81B619741FB18D7100A62748 /* Sources */,
 				81B6197F1FB18D7100A62748 /* ButterflyTests */,
 				81B619731FB18D7100A62748 /* Products */,
 			);
@@ -68,13 +68,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81B619741FB18D7100A62748 /* Butterfly */ = {
+		81B619741FB18D7100A62748 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				81B619751FB18D7100A62748 /* Butterfly.h */,
 				81B619761FB18D7100A62748 /* Info.plist */,
 			);
-			path = Butterfly;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		81B6197F1FB18D7100A62748 /* ButterflyTests */ = {
@@ -340,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Butterfly/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.Butterfly;
@@ -360,7 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Butterfly/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.Butterfly;

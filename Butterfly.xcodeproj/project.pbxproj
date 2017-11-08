@@ -10,6 +10,8 @@
 		81B6197C1FB18D7100A62748 /* Butterfly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B619721FB18D7100A62748 /* Butterfly.framework */; };
 		81B619811FB18D7100A62748 /* ButterflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B619801FB18D7100A62748 /* ButterflyTests.swift */; };
 		81B619831FB18D7100A62748 /* Butterfly.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B619751FB18D7100A62748 /* Butterfly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81B619971FB2E8C000A62748 /* Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B619961FB2E8C000A62748 /* Butterfly.swift */; };
+		81B619991FB2EA1100A62748 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B619981FB2EA1100A62748 /* Downloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		81B6197B1FB18D7100A62748 /* ButterflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B619801FB18D7100A62748 /* ButterflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTests.swift; sourceTree = "<group>"; };
 		81B619821FB18D7100A62748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81B619961FB2E8C000A62748 /* Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterfly.swift; sourceTree = "<group>"; };
+		81B619981FB2EA1100A62748 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				81B619741FB18D7100A62748 /* Sources */,
-				81B6197F1FB18D7100A62748 /* ButterflyTests */,
+				81B6199A1FB2FA8C00A62748 /* Tests */,
 				81B619731FB18D7100A62748 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +75,8 @@
 		81B619741FB18D7100A62748 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				81B6198C1FB1941900A62748 /* Core */,
+				81B6198D1FB1941900A62748 /* Extensions */,
 				81B619751FB18D7100A62748 /* Butterfly.h */,
 				81B619761FB18D7100A62748 /* Info.plist */,
 			);
@@ -84,6 +90,30 @@
 				81B619821FB18D7100A62748 /* Info.plist */,
 			);
 			path = ButterflyTests;
+			sourceTree = "<group>";
+		};
+		81B6198C1FB1941900A62748 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				81B619961FB2E8C000A62748 /* Butterfly.swift */,
+				81B619981FB2EA1100A62748 /* Downloader.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		81B6198D1FB1941900A62748 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81B6199A1FB2FA8C00A62748 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				81B6197F1FB18D7100A62748 /* ButterflyTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +178,7 @@
 				TargetAttributes = {
 					81B619711FB18D7100A62748 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					81B6197A1FB18D7100A62748 = {
@@ -196,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B619971FB2E8C000A62748 /* Butterfly.swift in Sources */,
+				81B619991FB2EA1100A62748 /* Downloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +367,7 @@
 		81B619871FB18D7100A62748 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.Butterfly;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +389,7 @@
 		81B619881FB18D7100A62748 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,8 +410,9 @@
 		81B6198A1FB18D7100A62748 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ButterflyTests/Info.plist;
+				INFOPLIST_FILE = Tests/ButterflyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.ButterflyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,8 +424,9 @@
 		81B6198B1FB18D7100A62748 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ButterflyTests/Info.plist;
+				INFOPLIST_FILE = Tests/ButterflyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.ButterflyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

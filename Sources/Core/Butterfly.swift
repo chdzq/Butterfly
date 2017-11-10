@@ -9,26 +9,35 @@
 import Foundation
 
 final public class Butterfly {
-    let downloader: Downloader
+    public let downloader: Downloader
+    public let imageDecoders: [ImageDecoder]
     
     init(_ builder: Builder) {
         downloader = builder.downloader
+        imageDecoders = builder.imageDecoders
     }
 
 }
 
 extension Butterfly {
-    open class Builder {
-        let downloader: Downloader
+    
+    public class Builder {
         
-        public
-        init(downloader: Downloader) {
+        let downloader: Downloader
+        var imageDecoders: [ImageDecoder] = [ImageIODecoder()]
+        
+        public init(downloader: Downloader) {
             self.downloader = downloader
         }
         
-        open
-        func build() -> Butterfly {
+        public func addImageDecoder(_ decoder: ImageDecoder) -> Self {
+            imageDecoders.append(decoder)
+            return self
+        }
+        
+        public func build() -> Butterfly {
             return Butterfly(self)
         }
     }
+    
 }

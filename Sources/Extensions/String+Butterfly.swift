@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CCommonCrypto
+import CommonCrypto
 
 extension String {
     var md5: String {

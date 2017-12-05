@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2D97D91FD57B9500175E01 /* mew_progressive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81EB7A121FB5A42A00B192E6 /* mew_progressive.jpg */; };
+		3D2D97DA1FD57B9500175E01 /* pia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EB7A101FB5A2D200B192E6 /* pia@2x.png */; };
+		3D2D97DB1FD57B9500175E01 /* niconiconi@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81EB7A071FB5834300B192E6 /* niconiconi@2x.gif */; };
+		3D2D97DC1FD57B9500175E01 /* ImageIODecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB79FB1FB569EC00B192E6 /* ImageIODecoderTests.swift */; };
+		3D2D97DD1FD57B9500175E01 /* ExtensionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB7A161FB5B04D00B192E6 /* ExtensionUtils.swift */; };
+		3D2D97E01FD5C0ED00175E01 /* UIImage+Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D97DF1FD5C0ED00175E01 /* UIImage+Butterfly.swift */; };
+		3D2D97E21FD5C3C700175E01 /* String+Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D97E11FD5C3C700175E01 /* String+Butterfly.swift */; };
+		3D2D97F41FD5D57000175E01 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D97F21FD5D53200175E01 /* ExtensionTests.swift */; };
+		3DF67C071FD68C75005BDB62 /* ImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF67C061FD68C75005BDB62 /* ImageCacheTests.swift */; };
 		816BE3901FB43AE1003C8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BE38F1FB43AE1003C8ACA /* AppDelegate.swift */; };
 		816BE3921FB43AE1003C8ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BE3911FB43AE1003C8ACA /* ViewController.swift */; };
 		816BE3951FB43AE1003C8ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BE3931FB43AE1003C8ACA /* Main.storyboard */; };
@@ -22,16 +31,11 @@
 		81B619AA1FB2FC8C00A62748 /* AlamofireDownloder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B619A11FB2FC8A00A62748 /* AlamofireDownloder.framework */; };
 		81B619AF1FB2FC8C00A62748 /* AlamofireDownloderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B619AE1FB2FC8C00A62748 /* AlamofireDownloderTests.swift */; };
 		81B619B11FB2FC8C00A62748 /* AlamofireDownloder.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B619A31FB2FC8B00A62748 /* AlamofireDownloder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81EB79FC1FB569EC00B192E6 /* ImageIODecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB79FB1FB569EC00B192E6 /* ImageIODecoderTests.swift */; };
-		81EB79FE1FB569EC00B192E6 /* Butterfly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B619721FB18D7100A62748 /* Butterfly.framework */; };
-		81EB7A081FB5834800B192E6 /* niconiconi@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81EB7A071FB5834300B192E6 /* niconiconi@2x.gif */; };
+		81D924331FBAD4BC00EC5B92 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D924321FBAD4BC00EC5B92 /* ImageCache.swift */; };
 		81EB7A0B1FB58FEF00B192E6 /* PNGDecodeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB7A0A1FB58FEF00B192E6 /* PNGDecodeOperator.swift */; };
 		81EB7A0D1FB5903200B192E6 /* GIFDecodeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB7A0C1FB5903200B192E6 /* GIFDecodeOperator.swift */; };
 		81EB7A0F1FB5905B00B192E6 /* ImageDecodeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB7A0E1FB5905B00B192E6 /* ImageDecodeOperator.swift */; };
-		81EB7A111FB5A2D600B192E6 /* pia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EB7A101FB5A2D200B192E6 /* pia@2x.png */; };
-		81EB7A131FB5A42D00B192E6 /* mew_progressive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81EB7A121FB5A42A00B192E6 /* mew_progressive.jpg */; };
 		81EB7A151FB5A8F400B192E6 /* ExtensionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB7A141FB5A8F400B192E6 /* ExtensionUtils.swift */; };
-		81EB7A171FB5B04D00B192E6 /* ExtensionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EB7A161FB5B04D00B192E6 /* ExtensionUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,16 +53,20 @@
 			remoteGlobalIDString = 81B619A01FB2FC8A00A62748;
 			remoteInfo = AlamofireDownloder;
 		};
-		81EB79FF1FB569EC00B192E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 81B619691FB18D7000A62748 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 81B619711FB18D7100A62748;
-			remoteInfo = Butterfly;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2D97DF1FD5C0ED00175E01 /* UIImage+Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Butterfly.swift"; sourceTree = "<group>"; };
+		3D2D97E11FD5C3C700175E01 /* String+Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Butterfly.swift"; sourceTree = "<group>"; };
+		3D2D97E51FD5CBE400175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97EC1FD5CCE200175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97ED1FD5CCED00175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97EE1FD5CCFA00175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97EF1FD5CD0500175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97F01FD5CD0F00175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97F11FD5CD1800175E01 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3D2D97F21FD5D53200175E01 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		3DF67C061FD68C75005BDB62 /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
 		816BE38D1FB43AE0003C8ACA /* Butterfly-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Butterfly-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		816BE38F1FB43AE1003C8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		816BE3911FB43AE1003C8ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,9 +90,8 @@
 		81B619A91FB2FC8B00A62748 /* AlamofireDownloderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireDownloderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B619AE1FB2FC8C00A62748 /* AlamofireDownloderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDownloderTests.swift; sourceTree = "<group>"; };
 		81B619B01FB2FC8C00A62748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81EB79F91FB569EC00B192E6 /* ImageIODecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageIODecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D924321FBAD4BC00EC5B92 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		81EB79FB1FB569EC00B192E6 /* ImageIODecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIODecoderTests.swift; sourceTree = "<group>"; };
-		81EB79FD1FB569EC00B192E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81EB7A071FB5834300B192E6 /* niconiconi@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "niconiconi@2x.gif"; sourceTree = "<group>"; };
 		81EB7A0A1FB58FEF00B192E6 /* PNGDecodeOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGDecodeOperator.swift; sourceTree = "<group>"; };
 		81EB7A0C1FB5903200B192E6 /* GIFDecodeOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFDecodeOperator.swift; sourceTree = "<group>"; };
@@ -133,17 +140,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81EB79F61FB569EC00B192E6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81EB79FE1FB569EC00B192E6 /* Butterfly.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2D97E31FD5CB9500175E01 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97EB1FD5CCC400175E01 /* watchSimulator */,
+				3D2D97EA1FD5CCBD00175E01 /* watchOS */,
+				3D2D97E91FD5CCA000175E01 /* macOSX */,
+				3D2D97E81FD5CC6B00175E01 /* iPhoneSimulator */,
+				3D2D97E71FD5CC0800175E01 /* iPhoneOS */,
+				3D2D97E61FD5CBEA00175E01 /* appleTVSimulator */,
+				3D2D97E41FD5CB9E00175E01 /* appleTVOS */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		3D2D97E41FD5CB9E00175E01 /* appleTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97E51FD5CBE400175E01 /* module.modulemap */,
+			);
+			path = appleTVOS;
+			sourceTree = "<group>";
+		};
+		3D2D97E61FD5CBEA00175E01 /* appleTVSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97EC1FD5CCE200175E01 /* module.modulemap */,
+			);
+			path = appleTVSimulator;
+			sourceTree = "<group>";
+		};
+		3D2D97E71FD5CC0800175E01 /* iPhoneOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97ED1FD5CCED00175E01 /* module.modulemap */,
+			);
+			path = iPhoneOS;
+			sourceTree = "<group>";
+		};
+		3D2D97E81FD5CC6B00175E01 /* iPhoneSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97EE1FD5CCFA00175E01 /* module.modulemap */,
+			);
+			path = iPhoneSimulator;
+			sourceTree = "<group>";
+		};
+		3D2D97E91FD5CCA000175E01 /* macOSX */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97EF1FD5CD0500175E01 /* module.modulemap */,
+			);
+			path = macOSX;
+			sourceTree = "<group>";
+		};
+		3D2D97EA1FD5CCBD00175E01 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97F01FD5CD0F00175E01 /* module.modulemap */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		3D2D97EB1FD5CCC400175E01 /* watchSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D97F11FD5CD1800175E01 /* module.modulemap */,
+			);
+			path = watchSimulator;
+			sourceTree = "<group>";
+		};
+		3DF67C081FD68EEA005BDB62 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				81EB7A121FB5A42A00B192E6 /* mew_progressive.jpg */,
+				81EB7A101FB5A2D200B192E6 /* pia@2x.png */,
+				81EB7A071FB5834300B192E6 /* niconiconi@2x.gif */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		816BE3881FB43A8D003C8ACA /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +267,6 @@
 		81B619681FB18D7000A62748 = {
 			isa = PBXGroup;
 			children = (
-				816BE3A31FB44565003C8ACA /* Decoder */,
 				81B619741FB18D7100A62748 /* Sources */,
 				81B6199B1FB2FBFE00A62748 /* ButterflyDownloader */,
 				81B6199A1FB2FA8C00A62748 /* Tests */,
@@ -205,7 +283,6 @@
 				81B619A11FB2FC8A00A62748 /* AlamofireDownloder.framework */,
 				81B619A91FB2FC8B00A62748 /* AlamofireDownloderTests.xctest */,
 				816BE38D1FB43AE0003C8ACA /* Butterfly-iOS-Demo.app */,
-				81EB79F91FB569EC00B192E6 /* ImageIODecoderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +290,7 @@
 		81B619741FB18D7100A62748 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3D2D97E31FD5CB9500175E01 /* CommonCrypto */,
 				81B6198C1FB1941900A62748 /* Core */,
 				81B6198D1FB1941900A62748 /* Extensions */,
 				81B619751FB18D7100A62748 /* Butterfly.h */,
@@ -224,8 +302,13 @@
 		81B6197F1FB18D7100A62748 /* ButterflyTests */ = {
 			isa = PBXGroup;
 			children = (
+				3DF67C081FD68EEA005BDB62 /* Sources */,
+				81EB7A161FB5B04D00B192E6 /* ExtensionUtils.swift */,
+				81EB79FB1FB569EC00B192E6 /* ImageIODecoderTests.swift */,
 				81B619801FB18D7100A62748 /* ButterflyTests.swift */,
 				81B619821FB18D7100A62748 /* Info.plist */,
+				3D2D97F21FD5D53200175E01 /* ExtensionTests.swift */,
+				3DF67C061FD68C75005BDB62 /* ImageCacheTests.swift */,
 			);
 			path = ButterflyTests;
 			sourceTree = "<group>";
@@ -233,6 +316,8 @@
 		81B6198C1FB1941900A62748 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				81D924371FBAE06500EC5B92 /* Cache */,
+				816BE3A31FB44565003C8ACA /* Decoder */,
 				81B619961FB2E8C000A62748 /* Butterfly.swift */,
 				81B619981FB2EA1100A62748 /* Downloader.swift */,
 				816BE3A11FB4450D003C8ACA /* ImageDecoder.swift */,
@@ -243,6 +328,8 @@
 		81B6198D1FB1941900A62748 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3D2D97DF1FD5C0ED00175E01 /* UIImage+Butterfly.swift */,
+				3D2D97E11FD5C3C700175E01 /* String+Butterfly.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,7 +337,6 @@
 		81B6199A1FB2FA8C00A62748 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				81EB79FA1FB569EC00B192E6 /* ImageIODecoderTests */,
 				81B619AD1FB2FC8C00A62748 /* AlamofireDownloderTests */,
 				81B6197F1FB18D7100A62748 /* ButterflyTests */,
 			);
@@ -283,17 +369,12 @@
 			path = AlamofireDownloderTests;
 			sourceTree = "<group>";
 		};
-		81EB79FA1FB569EC00B192E6 /* ImageIODecoderTests */ = {
+		81D924371FBAE06500EC5B92 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				81EB7A121FB5A42A00B192E6 /* mew_progressive.jpg */,
-				81EB7A101FB5A2D200B192E6 /* pia@2x.png */,
-				81EB7A071FB5834300B192E6 /* niconiconi@2x.gif */,
-				81EB79FB1FB569EC00B192E6 /* ImageIODecoderTests.swift */,
-				81EB79FD1FB569EC00B192E6 /* Info.plist */,
-				81EB7A161FB5B04D00B192E6 /* ExtensionUtils.swift */,
+				81D924321FBAD4BC00EC5B92 /* ImageCache.swift */,
 			);
-			path = ImageIODecoderTests;
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,24 +488,6 @@
 			productReference = 81B619A91FB2FC8B00A62748 /* AlamofireDownloderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		81EB79F81FB569EC00B192E6 /* ImageIODecoderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 81EB7A031FB569EC00B192E6 /* Build configuration list for PBXNativeTarget "ImageIODecoderTests" */;
-			buildPhases = (
-				81EB79F51FB569EC00B192E6 /* Sources */,
-				81EB79F61FB569EC00B192E6 /* Frameworks */,
-				81EB79F71FB569EC00B192E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				81EB7A001FB569EC00B192E6 /* PBXTargetDependency */,
-			);
-			name = ImageIODecoderTests;
-			productName = ImageIODecoderTests;
-			productReference = 81EB79F91FB569EC00B192E6 /* ImageIODecoderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -457,10 +520,6 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					81EB79F81FB569EC00B192E6 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 81B6196C1FB18D7100A62748 /* Build configuration list for PBXProject "Butterfly" */;
@@ -481,7 +540,6 @@
 				81B619A01FB2FC8A00A62748 /* AlamofireDownloder */,
 				81B619A81FB2FC8B00A62748 /* AlamofireDownloderTests */,
 				816BE38C1FB43AE0003C8ACA /* Butterfly-iOS-Demo */,
-				81EB79F81FB569EC00B192E6 /* ImageIODecoderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -508,6 +566,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2D97D91FD57B9500175E01 /* mew_progressive.jpg in Resources */,
+				3D2D97DA1FD57B9500175E01 /* pia@2x.png in Resources */,
+				3D2D97DB1FD57B9500175E01 /* niconiconi@2x.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,16 +583,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		81EB79F71FB569EC00B192E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81EB7A081FB5834800B192E6 /* niconiconi@2x.gif in Resources */,
-				81EB7A131FB5A42D00B192E6 /* mew_progressive.jpg in Resources */,
-				81EB7A111FB5A2D600B192E6 /* pia@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +604,10 @@
 			files = (
 				81B619971FB2E8C000A62748 /* Butterfly.swift in Sources */,
 				81B619991FB2EA1100A62748 /* Downloader.swift in Sources */,
+				3D2D97E01FD5C0ED00175E01 /* UIImage+Butterfly.swift in Sources */,
 				816BE3A61FB445C0003C8ACA /* ImageIODecoder.swift in Sources */,
+				3D2D97E21FD5C3C700175E01 /* String+Butterfly.swift in Sources */,
+				81D924331FBAD4BC00EC5B92 /* ImageCache.swift in Sources */,
 				81EB7A0D1FB5903200B192E6 /* GIFDecodeOperator.swift in Sources */,
 				81EB7A0B1FB58FEF00B192E6 /* PNGDecodeOperator.swift in Sources */,
 				81EB7A151FB5A8F400B192E6 /* ExtensionUtils.swift in Sources */,
@@ -566,7 +620,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2D97DD1FD57B9500175E01 /* ExtensionUtils.swift in Sources */,
+				3DF67C071FD68C75005BDB62 /* ImageCacheTests.swift in Sources */,
+				3D2D97DC1FD57B9500175E01 /* ImageIODecoderTests.swift in Sources */,
 				81B619811FB18D7100A62748 /* ButterflyTests.swift in Sources */,
+				3D2D97F41FD5D57000175E01 /* ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,15 +643,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81EB79F51FB569EC00B192E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81EB79FC1FB569EC00B192E6 /* ImageIODecoderTests.swift in Sources */,
-				81EB7A171FB5B04D00B192E6 /* ExtensionUtils.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -606,11 +655,6 @@
 			isa = PBXTargetDependency;
 			target = 81B619A01FB2FC8A00A62748 /* AlamofireDownloder */;
 			targetProxy = 81B619AB1FB2FC8C00A62748 /* PBXContainerItemProxy */;
-		};
-		81EB7A001FB569EC00B192E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 81B619711FB18D7100A62748 /* Butterfly */;
-			targetProxy = 81EB79FF1FB569EC00B192E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -791,6 +835,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.Butterfly;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				"SWIFT_INCLUDE_PATHS[sdk=appletvos*]" = Sources/CommonCrypto/appleTVOS;
+				"SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]" = Sources/CommonCrypto/appleTVSimulator;
+				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = Sources/CommonCrypto/iPhoneOS;
+				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = Sources/CommonCrypto/iPhoneSimulator;
+				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = Sources/CommonCrypto/macOSX;
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = Sources/CommonCrypto/watchOS;
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = Sources/CommonCrypto/watchSimulator;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -813,6 +864,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.Butterfly;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				"SWIFT_INCLUDE_PATHS[sdk=appletvos*]" = Sources/CommonCrypto/appleTVOS;
+				"SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]" = Sources/CommonCrypto/appleTVSimulator;
+				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = Sources/CommonCrypto/iPhoneOS;
+				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = Sources/CommonCrypto/iPhoneSimulator;
+				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = Sources/CommonCrypto/macOSX;
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = Sources/CommonCrypto/watchOS;
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = Sources/CommonCrypto/watchSimulator;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -915,32 +973,6 @@
 			};
 			name = Release;
 		};
-		81EB7A011FB569EC00B192E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tests/ImageIODecoderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.ImageIODecoderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		81EB7A021FB569EC00B192E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tests/ImageIODecoderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.chdzq.ImageIODecoderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -994,15 +1026,6 @@
 			buildConfigurations = (
 				81B619B61FB2FC8C00A62748 /* Debug */,
 				81B619B71FB2FC8C00A62748 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		81EB7A031FB569EC00B192E6 /* Build configuration list for PBXNativeTarget "ImageIODecoderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				81EB7A011FB569EC00B192E6 /* Debug */,
-				81EB7A021FB569EC00B192E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

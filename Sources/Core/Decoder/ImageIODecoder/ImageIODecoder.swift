@@ -33,6 +33,7 @@ public class ImageIODecoder {
     private var source: CGImageSource!
     
     private func processDecode(data: Data, final: Bool) throws -> DecodedImageSource {
+        lock.lock()
         if (nil == source) {
             source = final ? CGImageSourceCreateWithData(data as CFData, nil) : CGImageSourceCreateIncremental(nil)
         }
@@ -42,9 +43,11 @@ public class ImageIODecoder {
         }
         
         guard let source = self.source else {
+            lock.unlock()
             throw DecodeError.imageSourceNil
         }
-        
+        lock.unlock()
+
         guard let type = CGImageSourceGetType(source) else {
             throw DecodeError.unableDecodeTheType
         }
@@ -85,12 +88,12 @@ extension ImageIODecoder {
     struct Source: DecodedImageSource {
         let frames: [DecodedImageFrame]
         let loopCount: UInt
-        let frameCount: UInt
+        let frameCount: Int
         
         init(_ frames: [DecodedImageFrame], loopCount: UInt) {
             self.frames = frames
             self.loopCount = loopCount
-            self.frameCount = UInt(frames.count)
+            self.frameCount = frames.count
         }
         
         func imageFrame(at index: Index) -> DecodedImageFrame {
@@ -102,9 +105,7 @@ extension ImageIODecoder {
 extension ImageIODecoder: ImageDecoder {
     
     public func decode(data: Data, final: Bool) throws -> DecodedImageSource {
-        lock.lock()
         let source =  try processDecode(data: data, final: final)
-        lock.unlock()
         return source
     }
     

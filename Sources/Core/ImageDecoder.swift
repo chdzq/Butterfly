@@ -23,12 +23,28 @@ public protocol DecodedImageSource {
     
     /// Total animated frame count.
     /// if less than 1, the below methods will be ignored.
-    var frameCount: UInt { get }
+    var frameCount: Int { get }
     
     /// Animation loop count, 0 means infinite looping.
     var loopCount: UInt { get }
     
     func imageFrame(at index: Index) -> DecodedImageFrame
+}
+
+extension DecodedImageSource {
+    var image: UIImage? {
+        guard frameCount > 1 else {
+            return imageFrame(at: 0).image
+        }
+        var images: [UIImage] = []
+        var duration: TimeInterval = 0
+        for index in 0 ..< frameCount {
+            let frame = imageFrame(at: index)
+            images.append(frame.image)
+            duration += frame.duration
+        }
+        return UIImage.animatedImage(with: images, duration: duration)
+    }
 }
 
 public protocol ImageDecoder {

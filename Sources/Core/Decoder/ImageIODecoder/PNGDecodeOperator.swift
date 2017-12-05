@@ -37,19 +37,19 @@ struct PNGDecodeOperator: ImageIODecodeOperator {
                 continue
             }
             
-            guard let gifProperties: CFDictionary = properties[kCGImagePropertyPNGDictionary] else {
+            guard let pngProperties: CFDictionary = properties[kCGImagePropertyPNGDictionary] else {
                 continue
             }
             
-            if let delayValue: CFNumber = gifProperties[kCGImagePropertyAPNGDelayTime] {
+            if let delayValue: CFNumber = pngProperties[kCGImagePropertyAPNGDelayTime] {
                 CFNumberGetValue(delayValue, CFNumberType.doubleType, &delay)
             }
             
-            if let durationValue: CFNumber = gifProperties[kCGImagePropertyAPNGUnclampedDelayTime] {
+            if let durationValue: CFNumber = pngProperties[kCGImagePropertyAPNGUnclampedDelayTime] {
                 CFNumberGetValue(durationValue, CFNumberType.doubleType, &duration)
             }
             
-            if let orientationValue: CFNumber = gifProperties[kCGImagePropertyOrientation] {
+            if let orientationValue: CFNumber = pngProperties[kCGImagePropertyOrientation] {
                 CFNumberGetValue(orientationValue, CFNumberType.intType, &orientation)
             }
         }
